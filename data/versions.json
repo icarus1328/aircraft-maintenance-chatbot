@@ -1,0 +1,56 @@
+{
+  "head": "v3",
+  "versions": [
+    {
+      "version_id": "v1",
+      "parent_id": null,
+      "timestamp": "2026-03-15T09:00:00Z",
+      "author": "system",
+      "description": "Original document ingested",
+      "filename": "Synthetic manual_Boeing_737-800_Maintenance_1.docx",
+      "is_original": true,
+      "changes": []
+    },
+    {
+      "version_id": "v2",
+      "parent_id": "v1",
+      "timestamp": "2026-06-29T13:23:54Z",
+      "author": "test_engineer",
+      "description": "Mock version for testing version control",
+      "filename": "boeing_737_v2.docx",
+      "is_original": false,
+      "changes": [
+        {
+          "operation": "mock_replace",
+          "description": "No-op mock change"
+        }
+      ]
+    },
+    {
+      "version_id": "v3",
+      "parent_id": "v1",
+      "timestamp": "2026-06-29T13:50:14Z",
+      "author": "maintenance_lead",
+      "description": "Applied safety updates to warnings, cooling times, and torque specs.",
+      "filename": "boeing_737_v3.docx",
+      "is_original": false,
+      "changes": [
+        {
+          "operation": "InsertWarning",
+          "description": "Added flammable warning for hazmat handling",
+          "section": "1.5 Hazardous Materials"
+        },
+        {
+          "operation": "ReplaceStep",
+          "description": "Increased tire cooling time to 3 hours",
+          "section": "5.2.1 Tire Pressure Servicing"
+        },
+        {
+          "operation": "UpdateTableCell",
+          "description": "Updated aluminum torque for 1/4 inch tube",
+          "section": "Appendix A.2"
+        }
+      ]
+    }
+  ]
+}
