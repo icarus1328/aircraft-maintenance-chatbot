@@ -5,6 +5,8 @@ __pycache__/
 .env
 config/.env
 *.db
-vector_store/
-embeddings/
+vector_store/*
+!vector_store/.gitkeep
+embeddings/*
+!embeddings/.gitkeep
 .DS_Store
